@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+    background: #7733FF;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.title {
+    color: #fff;
+}
+
+.sections {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.section {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-title {
+    color: #7733FF;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.child-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 200px; /* flex-grow, flex-shrink, flex-basis */
+    /* flex-grow: Es la cantidad de columnas que va a ocupar el elemento */
+    /* flex-shrink: Es el factor de encogimiento que va tener el elemento para ocupar el contenedor */
+    /* flex-basis: Es el tamaño base que va a tener el elemento */   
+}
+
+.child {
+    height: 200px;
+    background: #7733FF;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #fff;
+}
